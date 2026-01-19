@@ -3,10 +3,11 @@ import { useState } from "react";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import HomePage from "./assets/Pages/Home";
-import AboutPage from "./assets/Pages/About";
+import HomePage from "./Pages/Home";
+import AboutPage from "./Pages/About";
 import Modal from "./components/Modal";
-import How from "./assets/Pages/How";
+import How from "./Pages/How";
+import ForCond from "./Pages/ForCond/";
 
 function App() {
   const navigate = useNavigate();
@@ -46,16 +47,7 @@ function App() {
           <Route path="/como-funciona" element={<How />} />
 
           {/* PARA CONDOMÍNIOS */}
-          <Route
-            path="/para-condominios"
-            element={
-              <div className="flex items-center justify-center min-h-[calc(100vh-80px)]">
-                <h1 className="text-3xl font-bold">
-                  Para condomínios (Em breve)
-                </h1>
-              </div>
-            }
-          />
+          <Route path="/para-condominios" element={<ForCond />} />
 
           {/* CONTATO */}
           <Route
