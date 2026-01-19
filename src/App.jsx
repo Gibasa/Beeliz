@@ -8,6 +8,7 @@ import AboutPage from "./Pages/About";
 import Modal from "./components/Modal";
 import How from "./Pages/How";
 import ForCond from "./Pages/ForCond/";
+import Contact  from "./Pages/Contact";
 
 function App() {
   const navigate = useNavigate();
@@ -35,7 +36,7 @@ function App() {
 
       <Navbar />
 
-      <main>
+      <main className="min-h-screen">
         <Routes>
           {/* HOME */}
           <Route path="/" element={<HomePage />} />
@@ -53,11 +54,7 @@ function App() {
           <Route
             path="/contato"
             element={
-              <div className="flex items-center justify-center min-h-[calc(100vh-80px)]">
-                <h1 className="text-3xl font-bold">
-                  Página de Contato (Em breve)
-                </h1>
-              </div>
+              <Contact/>
             }
           />
         </Routes>

@@ -2,8 +2,9 @@ function ForCondHero() {
   return (
     <section className="w-full bg-brand-white py-16">
       <div className="max-w-5xl mx-auto px-6 md:px-10 flex flex-col items-center text-center">
+        
         {/* TÍTULO */}
-        <h2 className="text-3xl md:text-4xl font-bold italic text-brand-primary mb-12">
+        <h2 className="text-brand-primary mb-12">
           A BeeLiz no seu condomínio
         </h2>
 
@@ -32,7 +33,7 @@ function ForCondHero() {
         </div>
 
         {/* TEXTO */}
-        <div className="max-w-4xl text-left text-brand-primary text-base md:text-lg leading-relaxed space-y-6">
+        <div className="max-w-4xl text-left text-brand-primary space-y-6">
           <p>
             Levar a BeeLiz para o seu condomínio é transformar um espaço
             disponível em um serviço que facilita a vida dos moradores todos os

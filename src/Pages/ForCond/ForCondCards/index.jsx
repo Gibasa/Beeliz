@@ -5,12 +5,12 @@ function ForCondCards() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           
           {/* CARD – CONDOMÍNIO */}
-          <div className="bg-brand-primary text-brand-secondary p-8 flex rounded-3xl flex-col">
-            <h3 className="font-title text-2xl font-bold italic mb-6">
+          <div className="bg-brand-primary text-brand-secondary p-8 rounded-3xl flex flex-col">
+            <h3 className="mb-6">
               Benefícios para o condomínio:
             </h3>
 
-            <ul className="space-y-3 text-base md:text-lg">
+            <ul className="space-y-3">
               <li>• Sem investimento inicial</li>
               <li>• Sem custos operacionais</li>
               <li>• Sem gestão por parte do condomínio</li>
@@ -21,12 +21,12 @@ function ForCondCards() {
           </div>
 
           {/* CARD – MORADORES */}
-          <div className="bg-brand-primary text-brand-secondary p-8 flex rounded-3xl flex-col">
-            <h3 className="font-title text-2xl font-bold italic mb-6">
+          <div className="bg-brand-primary text-brand-secondary p-8 rounded-3xl flex flex-col">
+            <h3 className="mb-6">
               Benefícios para os moradores:
             </h3>
 
-            <ul className="space-y-3 text-base md:text-lg">
+            <ul className="space-y-3">
               <li>• Mercado dentro do condomínio</li>
               <li>• Menos deslocamentos</li>
               <li>• Mais segurança</li>

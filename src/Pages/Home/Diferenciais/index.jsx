@@ -23,31 +23,40 @@ function Differentials() {
   return (
     <section className="bg-brand-primary py-16">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
-        <h2 className="font-title text-3xl md:text-4xl font-bold text-brand-secondary text-center mb-12 italic">
+        
+        {/* TÍTULO */}
+        <h2 className="text-brand-secondary text-center mb-12">
           Por que somos <br />
           diferentes?
         </h2>
 
+        {/* CARDS */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-12 px-4 sm:px-8 md:px-20 lg:px-40">
           {diferenciais.map((item, index) => (
-            <div key={index} className="bg-brand-secondary p-6 text-center">
-              <div className="w-8 h-8 mx-auto mb-4 flex items-center justify-center rounded-full bg-brand-primary text-brand-secondary text-2xl">
+            <div
+              key={index}
+              className="bg-brand-secondary p-6 text-center rounded-2xl"
+            >
+              <div className="w-8 h-8 mx-auto mb-4 flex items-center justify-center rounded-full bg-brand-primary text-brand-secondary text-lg">
                 ✔
               </div>
 
-              <h3 className="font-title text-xl font-bold text-brand-primary mb-2 italic whitespace-pre-line">
+              <h3 className="text-brand-primary mb-2 whitespace-pre-line">
                 {item.title}
               </h3>
 
-              <p className="font-sans text-gray-700 whitespace-pre-line">
+              <p className="text-brand-primary whitespace-pre-line">
                 {item.text}
               </p>
             </div>
           ))}
         </div>
 
+        {/* CTA */}
         <div className="text-center">
-          <Button hoverVariant="light">Quero a Beeliz no meu condomínio</Button>
+          <Button hoverVariant="light">
+            Quero a BeeLiz no meu condomínio
+          </Button>
         </div>
       </div>
     </section>

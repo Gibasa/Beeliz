@@ -2,17 +2,18 @@ function Button({
   children,
   onClick,
   className = "",
-  hoverVariant = "default", // default | invert | light
+  hoverVariant = "default",
+  type = "button",
 }) {
   const baseClasses = `
     inline-flex items-center justify-center
-    font-bold
-    py-3 px-6
+    font-main font-semibold
+    text-sm md:text-base
+    py-2.5 px-6
     rounded-full
     cursor-pointer
     transition-colors duration-300
     focus:outline-none
-    italic
   `;
 
   const variants = {
@@ -20,6 +21,12 @@ function Button({
       bg-brand-primary text-brand-secondary
       hover:bg-brand-secondary hover:text-brand-primary
     `,
+
+    bgYellow: `
+      bg-brand-primary text-brand-secondary
+      hover:bg-white hover:text-brand-primary
+    `,
+
     invert: `
       bg-brand-secondary text-brand-primary
       hover:bg-brand-primary hover:text-brand-secondary
@@ -33,7 +40,7 @@ function Button({
 
   return (
     <button
-      type="button"
+      type={type}
       onClick={onClick}
       className={`${baseClasses} ${variants[hoverVariant]} ${className}`}
     >
