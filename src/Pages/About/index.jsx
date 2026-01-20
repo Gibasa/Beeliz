@@ -32,6 +32,13 @@ function About() {
               tecnologia, praticidade e cuidado humano para cuidar da rotina das
               pessoas e fazer a vida fluir melhor, onde elas vivem e trabalham.
             </p>
+            <Button
+              whatsapp
+              hoverVariant="light"
+              className="mt-10 self-center w-fit"
+            >
+              Quero saber mais
+            </Button>
           </div>
 
           {/* Imagem */}
@@ -41,9 +48,6 @@ function About() {
               alt="Família reunida em ambiente doméstico"
               className="max-w-full h-auto"
             />
-            <Button whatsapp hoverVariant="light" className="mt-10 self-center w-fit">
-              Quero saber mais
-            </Button>
           </div>
         </div>
       </div>
