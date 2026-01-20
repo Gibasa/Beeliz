@@ -9,6 +9,7 @@ import Modal from "./components/Modal";
 import How from "./Pages/How";
 import ForCond from "./Pages/ForCond/";
 import Contact  from "./Pages/Contact";
+import WhatsApp from "./components/Whatsapp";
 
 function App() {
   const navigate = useNavigate();
@@ -59,6 +60,7 @@ function App() {
           />
         </Routes>
       </main>
+      <WhatsApp/>
 
       <Footer />
     </>

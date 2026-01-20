@@ -1,13 +1,15 @@
+import Differentials from "./Diferenciais";
+
 const imagem2 = "/images/IMAGEM 2.png";
 
 function About() {
   return (
-    <section className="bg-white py-16">
+    <section className="bg-white">
+        <Differentials />
       <div className="max-w-7xl mx-auto px-6 md:px-10">
-        {/* Título */}
-        <h1 className="text-brand-primary text-center mb-12">
+        <h2 className="text-brand-primary py-10 text-center mb-12">
           Quem somos
-        </h1>
+        </h2>
 
         <div className="flex flex-col md:flex-row items-start justify-between gap-12">
           {/* Texto */}
