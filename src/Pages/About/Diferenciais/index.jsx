@@ -35,7 +35,7 @@ function Differentials() {
           {diferenciais.map((item, index) => (
             <div
               key={index}
-              className="bg-brand-secondary p-6 text-center rounded-2xl mx-auto w-[50vw] sm:max-w-none"
+              className="bg-brand-secondary p-6 text-center rounded-2xl mx-auto sm:max-w-none"
             >
               <div className="w-8 h-8 mx-auto mb-4 flex items-center justify-center rounded-full bg-brand-primary text-brand-secondary text-lg">
                 ✔
