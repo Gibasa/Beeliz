@@ -23,7 +23,6 @@ function Differentials() {
   return (
     <section className="bg-brand-primary py-16">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
-        
         {/* TÍTULO */}
         <h2 className="text-brand-secondary text-center mb-12">
           Por que somos <br />
@@ -35,7 +34,7 @@ function Differentials() {
           {diferenciais.map((item, index) => (
             <div
               key={index}
-              className="bg-brand-secondary p-6 text-center rounded-2xl mx-auto sm:max-w-none"
+              className="bg-brand-secondary p-6 text-center rounded-2xl mx-auto w-full max-w-[200px] sm:max-w-none"
             >
               <div className="w-8 h-8 mx-auto mb-4 flex items-center justify-center rounded-full bg-brand-primary text-brand-secondary text-lg">
                 ✔
