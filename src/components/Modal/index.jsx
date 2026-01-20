@@ -4,12 +4,11 @@ function EntryModal({ onClose, onAction }) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80">
       {/* Modal */}
-      <div className="relative bg-white max-w-md w-full mx-4 p-8 md:p-10 text-center rounded-2xl">
-        
+      <div className="relative bg-white max-w-lg w-full mx-4 p-8 md:p-10 text-center rounded-2xl">
         {/* Botão fechar */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 text-brand-primary text-xl"
+          className="absolute top-4 right-4 text-brand-primary text-xl cursor-pointer"
           aria-label="Fechar"
         >
           ✕
@@ -17,12 +16,13 @@ function EntryModal({ onClose, onAction }) {
 
         {/* Conteúdo */}
         <h2 className="font-title text-2xl md:text-3xl font-bold italic text-brand-primary mb-4">
-          Aviso importante
+          Indique e ganhe!
         </h2>
 
-        <p className="font-main text-brand-primary mb-8 text-base md:text-lg">
-          Quer saber como a BeeLiz pode transformar o dia a dia do seu
-          condomínio?
+        <p className="font-main text-brand-primary mb-8 text-sm">
+          Conhece um condomínio que combina com a Beeliz? <br/>Indique pra gente
+          e, se o contrato for fechado, você recebe uma recompensa especial!
+          Aproveite a oportundade de ganhar enquanto ajuda a Beeliz a crescer.
         </p>
 
         <Button hoverVariant="invert" onClick={onAction}>
