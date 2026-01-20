@@ -1,15 +1,14 @@
+import Button from "../../../components/Button";
+
 function ForCondCards() {
   return (
     <section className="bg-brand-white py-16">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          
+
           {/* CARD – CONDOMÍNIO */}
           <div className="bg-brand-primary text-brand-secondary p-8 rounded-3xl flex flex-col">
-            <h3 className="mb-6">
-              Benefícios para o condomínio:
-            </h3>
-
+            <h3 className="mb-6">Benefícios para o condomínio:</h3>
             <ul className="space-y-3">
               <li>• Sem investimento inicial</li>
               <li>• Sem custos operacionais</li>
@@ -22,10 +21,7 @@ function ForCondCards() {
 
           {/* CARD – MORADORES */}
           <div className="bg-brand-primary text-brand-secondary p-8 rounded-3xl flex flex-col">
-            <h3 className="mb-6">
-              Benefícios para os moradores:
-            </h3>
-
+            <h3 className="mb-6">Benefícios para os moradores:</h3>
             <ul className="space-y-3">
               <li>• Mercado dentro do condomínio</li>
               <li>• Menos deslocamentos</li>
@@ -33,6 +29,13 @@ function ForCondCards() {
               <li>• Compras rápidas para o dia a dia</li>
               <li>• Atendimento humano quando necessário</li>
             </ul>
+          </div>
+
+          {/* BOTÃO CENTRALIZADO */}
+          <div className="md:col-span-2 flex justify-center mt-2">
+            <Button whatsapp hoverVariant="default">
+              Quero transformar meu condomínio
+            </Button>
           </div>
 
         </div>

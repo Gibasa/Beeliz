@@ -35,7 +35,7 @@ function Differentials() {
           {diferenciais.map((item, index) => (
             <div
               key={index}
-              className="bg-brand-secondary p-6 text-center rounded-2xl"
+              className="bg-brand-secondary p-6 text-center rounded-2xl mx-auto w-[50vw] sm:max-w-none"
             >
               <div className="w-8 h-8 mx-auto mb-4 flex items-center justify-center rounded-full bg-brand-primary text-brand-secondary text-lg">
                 ✔
@@ -45,7 +45,7 @@ function Differentials() {
                 {item.title}
               </h3>
 
-              <p className="text-brand-primary whitespace-pre-line">
+              <p className="text-brand-primary whitespace-pre-line ">
                 {item.text}
               </p>
             </div>
@@ -54,7 +54,7 @@ function Differentials() {
 
         {/* CTA */}
         <div className="text-center">
-          <Button hoverVariant="light">
+          <Button whatsapp hoverVariant="light">
             Quero a BeeLiz no meu condomínio
           </Button>
         </div>

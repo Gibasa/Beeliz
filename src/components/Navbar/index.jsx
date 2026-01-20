@@ -30,7 +30,12 @@ function Navbar() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  const isActive = (path) => location.pathname === path;
+  const isActive = (path) => {
+    if (path === "/quem-somos" && location.pathname === "/") {
+      return true;
+    }
+    return location.pathname === path;
+  };
 
   /** =========================
    * CORES DESKTOP (INALTERADAS)
@@ -42,24 +47,18 @@ function Navbar() {
   /** =========================
    * CORES HAMBURGUER (INVERTIDAS)
    ========================== */
-  const mobileBoxBg = scrolled
-    ? "bg-brand-primary"
-    : "bg-brand-secondary";
+  const mobileBoxBg = scrolled ? "bg-brand-primary" : "bg-brand-secondary";
 
-  const mobileButtonBg = scrolled
-    ? "bg-brand-secondary"
-    : "bg-brand-primary";
+  const mobileButtonBg = scrolled ? "bg-brand-secondary" : "bg-brand-primary";
 
   const mobileTextColor = scrolled
     ? "text-brand-primary"
     : "text-brand-secondary";
 
-  const burgerColor = scrolled
-    ? "text-brand-primary"
-    : "text-brand-secondary";
+  const burgerColor = scrolled ? "text-brand-primary" : "text-brand-secondary";
 
   const menuItems = [
-    { label: "Quem somos", path: "/quem-somos" },
+    { label: "Quem somos", path: "/" },
     { label: "Como funciona", path: "/como-funciona" },
     { label: "Para condomínios", path: "/para-condominios" },
     { label: "Contato", path: "/contato" },
@@ -75,7 +74,7 @@ function Navbar() {
           <img
             src={scrolled ? "/images/Logo-blue.png" : "/images/Logo-yellow.png"}
             alt="Beeliz Logo"
-            className="h-12 w-auto object-contain transition-all duration-300"
+            className="h-12 lg:h-16 w-auto object-contain transition-all duration-300"
           />
         </Link>
 

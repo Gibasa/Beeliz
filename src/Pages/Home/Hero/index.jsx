@@ -17,16 +17,15 @@ function Hero() {
             </h1>
 
             <p className="font-sans text-base md:text-lg text-gray-700 mb-8
-              md:max-w-[22ch] lg:max-w-[28ch]
+              md:max-w-[28ch] lg:max-w-[35ch]
               mx-auto lg:mx-0"
             >
               Tudo o que você precisa, a poucos passos de você.
-              <br />
               Uma solução inteligente criada para facilitar o seu dia a dia.
             </p>
 
             <div className="flex justify-center lg:justify-start">
-              <Button hoverVariant="invert">
+              <Button whatsapp hoverVariant="invert">
                 Quero saber mais
               </Button>
             </div>

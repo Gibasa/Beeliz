@@ -1,12 +1,14 @@
+import Button from "../../../components/Button";
+
 function ForCondHero() {
   return (
-    <section className="w-full bg-brand-white py-16">
+    <section className="w-full bg-brand-white pt-16 pb-5">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         {/* Container principal: texto à esquerda, imagens à direita */}
         <div className="flex flex-col lg:flex-row items-start gap-20">
 
           {/* TEXTO */}
-          <div className="lg:w-1/2 text-left">
+          <div className="lg:w-1/2 text-left flex flex-col sm:justify-center">
             {/* TÍTULO */}
             <h2 className="font-title text-3xl md:text-4xl font-bold italic text-brand-primary mb-8">
               A BeeLiz no seu condomínio
@@ -45,6 +47,9 @@ function ForCondHero() {
               <br />
               Para o condomínio, um diferencial que valoriza o espaço e a experiência de viver ali.
             </p>
+            <Button whatsapp hoverVariant="light" className="mt-10 self-center w-fit">
+              Quero saber mais
+            </Button>
           </div>
 
           {/* IMAGENS */}

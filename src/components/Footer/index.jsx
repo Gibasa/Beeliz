@@ -12,7 +12,7 @@ function Footer() {
           {/* Ícones */}
           <div className="flex items-center gap-6">
             <a
-              href="#"
+              href="https://www.instagram.com/beelizmarketgo/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
@@ -22,7 +22,7 @@ function Footer() {
             </a>
 
             <a
-              href="#"
+              href="https://www.linkedin.com/company/beelizmarketgo/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"

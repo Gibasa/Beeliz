@@ -32,8 +32,8 @@ function InstallationSection() {
             </p>
 
             {/* BOTÃO CENTRALIZADO NO MOBILE */}
-            <div className="w-full flex justify-center lg:justify-start mt-5">
-              <Button hoverVariant="default">
+            <div className="w-full flex justify-center lg:justify-start mt-10">
+              <Button whatsapp hoverVariant="default">
                 Quero transformar meu condomínio
               </Button>
             </div>

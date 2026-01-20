@@ -1,7 +1,7 @@
 import { FaWhatsapp } from "react-icons/fa";
 
 function WhatsApp() {
-  const phoneNumber = "5599999999999"; // depois você troca
+  const phoneNumber = "5515996810505";
   const message = "Olá! Gostaria de saber mais sobre a BeeLiz.";
 
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(

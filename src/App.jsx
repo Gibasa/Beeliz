@@ -43,7 +43,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
 
           {/* QUEM SOMOS */}
-          <Route path="/quem-somos" element={<AboutPage />} />
+          <Route path="/quem-somos" element={<HomePage />} />
 
           {/* COMO FUNCIONA */}
           <Route path="/como-funciona" element={<How />} />

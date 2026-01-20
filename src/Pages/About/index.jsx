@@ -1,19 +1,17 @@
-import Differentials from "./Diferenciais";
+import Button from "../../components/Button";
 
 const imagem2 = "/images/IMAGEM 2.png";
 
 function About() {
   return (
     <section className="bg-white">
-        <Differentials />
       <div className="max-w-7xl mx-auto px-6 md:px-10">
-        <h2 className="text-brand-primary py-10 text-center mb-12">
-          Quem somos
-        </h2>
-
-        <div className="flex flex-col md:flex-row items-start justify-between gap-12">
+        <div className="flex flex-col py-15 md:flex-row items-start justify-between gap-12">
           {/* Texto */}
           <div className="md:w-1/2 text-center md:text-left">
+            <h2 className="text-brand-primary py-2 lg:text-left sm:text-center mb-12">
+              Quem somos
+            </h2>
             <p className="text-gray-700 mb-6">
               A BeeLiz nasceu de uma necessidade real do dia a dia: resolver
               imprevistos de forma rápida, simples e sem deslocamentos. Da
@@ -37,12 +35,15 @@ function About() {
           </div>
 
           {/* Imagem */}
-          <div className="md:w-1/2 flex justify-center">
+          <div className="md:w-1/2 flex justify-center flex-col">
             <img
               src={imagem2}
               alt="Família reunida em ambiente doméstico"
               className="max-w-full h-auto"
             />
+            <Button whatsapp hoverVariant="light" className="mt-10 self-center w-fit">
+              Quero saber mais
+            </Button>
           </div>
         </div>
       </div>
