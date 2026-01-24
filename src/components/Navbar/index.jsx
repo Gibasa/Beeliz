@@ -61,6 +61,7 @@ function Navbar() {
     { label: "Quem somos", path: "/" },
     { label: "Como funciona", path: "/como-funciona" },
     { label: "Para condomínios", path: "/para-condominios" },
+    { label: "Para empresas", path: "/para-empresas" },
     { label: "Contato", path: "/contato" },
   ];
 
@@ -79,7 +80,7 @@ function Navbar() {
         </Link>
 
         {/* MENU DESKTOP */}
-        <div className="hidden lg:flex space-x-4">
+        <div className="hidden lg:flex space-x-3">
           {menuItems.map((item) => {
             const active = isActive(item.path);
 
@@ -88,7 +89,7 @@ function Navbar() {
                 key={item.path}
                 to={item.path}
                 className={`
-                  px-6 py-2.5
+                  px-4 py-2.5
                   rounded-full
                   transition-colors duration-300
                   font-medium italic

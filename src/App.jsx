@@ -4,12 +4,13 @@ import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import HomePage from "./Pages/Home";
-import AboutPage from "./Pages/About";
 import Modal from "./components/Modal";
 import How from "./Pages/How";
 import ForCond from "./Pages/ForCond/";
-import Contact  from "./Pages/Contact";
+import ForCompany from "./Pages/ForCompany";
+import Contact from "./Pages/Contact";
 import WhatsApp from "./components/Whatsapp";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const navigate = useNavigate();
@@ -31,6 +32,7 @@ function App() {
 
   return (
     <>
+    <ScrollToTop />
       {showModal && (
         <Modal onClose={handleCloseModal} onAction={handleModalAction} />
       )}
@@ -39,28 +41,15 @@ function App() {
 
       <main className="min-h-screen">
         <Routes>
-          {/* HOME */}
           <Route path="/" element={<HomePage />} />
-
-          {/* QUEM SOMOS */}
           <Route path="/quem-somos" element={<HomePage />} />
-
-          {/* COMO FUNCIONA */}
           <Route path="/como-funciona" element={<How />} />
-
-          {/* PARA CONDOMÍNIOS */}
           <Route path="/para-condominios" element={<ForCond />} />
-
-          {/* CONTATO */}
-          <Route
-            path="/contato"
-            element={
-              <Contact/>
-            }
-          />
+          <Route path="/para-empresas" element={<ForCompany />} />
+          <Route path="/contato" element={<Contact />} />
         </Routes>
       </main>
-      <WhatsApp/>
+      <WhatsApp />
 
       <Footer />
     </>

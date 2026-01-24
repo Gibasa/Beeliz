@@ -8,26 +8,25 @@ function ForCondCards() {
 
           {/* CARD – CONDOMÍNIO */}
           <div className="bg-brand-primary text-brand-secondary p-8 rounded-3xl flex flex-col">
-            <h3 className="mb-6">Benefícios para o condomínio:</h3>
+            <h3 className="mb-6">Benefícios para o condomínio</h3>
             <ul className="space-y-3">
-              <li>• Sem investimento inicial</li>
-              <li>• Sem custos operacionais</li>
-              <li>• Sem gestão por parte do condomínio</li>
-              <li>• Instalação rápida e reversível</li>
-              <li>• Valorização do espaço comum</li>
-              <li>• Serviço ativo 24h</li>
+              <li>• Implantação sem investimento inicial</li>
+              <li>• Operação sem custos ou gestão para o condomínio</li>
+              <li>• Instalação rápida e totalmente reversível</li>
+              <li>• Valorização das áreas comuns</li>
+              <li>• Serviço disponível 24h para os moradores</li>
             </ul>
           </div>
 
           {/* CARD – MORADORES */}
           <div className="bg-brand-primary text-brand-secondary p-8 rounded-3xl flex flex-col">
-            <h3 className="mb-6">Benefícios para os moradores:</h3>
+            <h3 className="mb-6">Benefícios para os moradores</h3>
             <ul className="space-y-3">
-              <li>• Mercado dentro do condomínio</li>
-              <li>• Menos deslocamentos</li>
-              <li>• Mais segurança</li>
-              <li>• Compras rápidas para o dia a dia</li>
-              <li>• Atendimento humano quando necessário</li>
+              <li>• Conveniência de um mercado dentro do condomínio</li>
+              <li>• Menos deslocamentos no dia a dia</li>
+              <li>• Mais segurança e tranquilidade</li>
+              <li>• Compras rápidas para a rotina</li>
+              <li>• Atendimento humano sempre que necessário</li>
             </ul>
           </div>
 

@@ -2,20 +2,28 @@ import Button from "@/components/Button";
 
 const diferenciais = [
   {
-    title: "Não somos \nfranquia",
-    text: "Sem taxas \nde franquia, \nroyalties e taxas \nde marketing.",
+    title: "Não somos franquia",
+    text: "Sem taxas, royalties ou cobranças ocultas.",
   },
   {
-    title: "Empresa \nfamiliar",
-    text: "Criada com \na lógica do \ncuidado e da \nresponsabilidade.",
+    title: "Gestão profissional",
+    text: "Operação pensada por quem entende de logística e abastecimento.",
   },
   {
-    title: "Suporte \nhumano \nonline",
-    text: "Com pessoas para \nresolver dúvidas \ne imprevistos.",
+    title: "Atendimento humano",
+    text: "Suporte feito por pessoas, com agilidade e proximidade.",
   },
   {
-    title: "Política \nde preços",
-    text: "Preços mais \natrativos graças \na parcerias \nestratégicas.",
+    title: "Projeto sob medida",
+    text: "Cada unidade adaptada ao perfil do condomínio.",
+  },
+  {
+    title: "Política de Preço",
+    text: "Parcerias estratégicas e controle de custos.",
+  },
+  {
+    title: "Visão de longo prazo",
+    text: "Empresa familiar, com responsabilidade e compromisso.",
   },
 ];
 
@@ -23,6 +31,7 @@ function Differentials() {
   return (
     <section className="bg-brand-primary py-16">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
+        
         {/* TÍTULO */}
         <h2 className="text-brand-secondary text-center mb-12">
           Por que somos <br />
@@ -30,11 +39,25 @@ function Differentials() {
         </h2>
 
         {/* CARDS */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-12 px-4 sm:px-8 md:px-20 lg:px-40">
+        <div className="
+          grid 
+          grid-cols-1 
+          md:grid-cols-2 
+          lg:grid-cols-3 
+          gap-6 
+          mb-12
+          px-4 md:px-12 lg:px-24
+        ">
           {diferenciais.map((item, index) => (
             <div
               key={index}
-              className="bg-brand-secondary p-6 text-center rounded-2xl mx-auto w-full max-w-[200px] sm:max-w-none"
+              className="
+                bg-brand-secondary 
+                p-6 
+                text-center 
+                rounded-2xl 
+                w-full
+              "
             >
               <div className="w-8 h-8 mx-auto mb-4 flex items-center justify-center rounded-full bg-brand-primary text-brand-secondary text-lg">
                 ✔
@@ -44,7 +67,7 @@ function Differentials() {
                 {item.title}
               </h3>
 
-              <p className="text-brand-primary whitespace-pre-line ">
+              <p className="text-brand-primary">
                 {item.text}
               </p>
             </div>
