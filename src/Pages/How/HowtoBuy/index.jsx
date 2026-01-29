@@ -30,7 +30,7 @@ function HowToBuy() {
     {
       src: "/images/Passos/B6.png",
       alt: "Passo 6",
-      text: "Leve sua compra para casa",
+      text: "Leve seu produto",
     },
   ];
 

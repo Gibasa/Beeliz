@@ -1,6 +1,6 @@
 import Button from "../Button";
 
-function EntryModal({ onClose, onAction }) {
+function EntryModal({ onClose }) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80">
       {/* Modal */}
@@ -25,7 +25,7 @@ function EntryModal({ onClose, onAction }) {
           Aproveite a oportundade de ganhar enquanto ajuda a Beeliz a crescer.
         </p>
 
-        <Button hoverVariant="invert" onClick={onAction}>
+        <Button hoverVariant="invert" whatsapp>
           Quero saber mais
         </Button>
       </div>

@@ -20,6 +20,8 @@
   --font-size-button: 16px;
 
   --spacing-header: 80px;
+
+  --breakpoint-nav: 1135px;
 }
 
 @layer base {

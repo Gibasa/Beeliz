@@ -11,6 +11,7 @@ import ForCompany from "./Pages/ForCompany";
 import Contact from "./Pages/Contact";
 import WhatsApp from "./components/Whatsapp";
 import ScrollToTop from "./components/ScrollToTop";
+import BeelizPlus from "./Pages/Beeliz+";
 
 function App() {
   const navigate = useNavigate();
@@ -46,6 +47,7 @@ function App() {
           <Route path="/como-funciona" element={<How />} />
           <Route path="/para-condominios" element={<ForCond />} />
           <Route path="/para-empresas" element={<ForCompany />} />
+          <Route path="/beeliz-plus" element={<BeelizPlus />} />
           <Route path="/contato" element={<Contact />} />
         </Routes>
       </main>

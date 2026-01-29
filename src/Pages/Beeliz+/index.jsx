@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
-import Button from "../../../components/Button";
+import Button from "../../components/Button";
 
 const images = [
-  "/images/ForCond/ForCond1.webp",
-  "/images/ForCond/ForCond2.webp",
-  "/images/ForCond/ForCond3.webp",
-  "/images/ForCond/ForCond4.webp",
+  "/images/BeelizPlus/BeelizPlus1.webp",
+  "/images/BeelizPlus/BeelizPlus2.webp",
+  "/images/BeelizPlus/BeelizPlus3.webp",
+  "/images/BeelizPlus/BeelizPlus4.webp",
 ];
 
-function ForCondHero() {
+function BeelizPlus() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
@@ -20,62 +20,58 @@ function ForCondHero() {
   }, []);
 
   return (
-    <section className="w-full bg-brand-white pt-16 pb-5">
+    <section className="w-full bg-brand-white py-16">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <div className="flex flex-col lg:flex-row gap-20 items-start">
-
           {/* TEXTO */}
           <div className="lg:w-1/2 text-left flex flex-col">
             <h2 className="font-title text-3xl md:text-4xl font-bold italic text-brand-primary mb-8">
-              A BeeLiz no seu condomínio
+              BeeLiz em Centros Comerciais, Hospitais, Universidades e Grandes
+              Circulações.
             </h2>
 
             <p className="font-main text-base md:text-lg text-brand-primary mb-4">
-              A BeeLiz nasce para facilitar a vida dentro de casa, mesmo fora dela.
+              Em ambientes de grande circulação, o tempo é valioso.
             </p>
 
             <p className="font-main text-base md:text-lg text-brand-primary mb-4">
-              Em condomínios residenciais, somos uma solução de conveniência
-              pensada para apoiar a rotina dos moradores, oferecendo acesso
-              rápido a itens essenciais sem a necessidade de deslocamentos ou
-              interrupções no dia a dia.
+              A BeeLiz atua como uma solução de conveniência que apoia pessoas
+              em movimento, sejam pacientes, estudantes, profissionais ou
+              visitantes, oferecendo acesso rápido a itens essenciais no momento
+              em que eles são necessários.
             </p>
-
             <p className="font-main text-base md:text-lg text-brand-primary mb-4">
-              Nossa presença valoriza os espaços comuns, contribui para uma
-              experiência mais prática e fortalece a sensação de cuidado com
-              quem vive ali.
+              Em hospitais, universidades e centros comerciais, nossa presença
+              contribui para a organização do fluxo, melhora a experiência do
+              público e transforma espaços estratégicos em pontos de apoio
+              funcionais e acolhedores.
             </p>
 
             <p className="font-main text-base md:text-lg text-brand-primary mb-6">
-              Mais do que um minimercado, a BeeLiz se integra ao cotidiano do
-              condomínio, respeitando o fluxo, o perfil dos moradores e a
-              dinâmica do espaço.
+              Tudo pensado para integrar-se ao ambiente, respeitar o contexto e
+              facilitar a jornada de quem passa por ali.
             </p>
 
             <Button
               whatsapp
               hoverVariant="default"
-              className="mt-10 self-center lg:self-start w-fit"
+              className="mt-6 self-center lg:self-start w-fit"
             >
-              Quero saber mais
+              Quero levar a BeeLiz para minha empresa
             </Button>
           </div>
 
-          {/* CAROUSEL (PADRÃO BEELIZPLUS) */}
+          {/* CAROUSEL */}
           <div className="lg:w-1/2 flex flex-col gap-4">
-
             {/* IMAGEM GRANDE */}
             <div className="w-full overflow-hidden rounded-2xl">
               <img
                 src={images[activeIndex]}
-                alt={`BeeLiz em condomínio ${activeIndex + 1}`}
-                className="
-                  w-full
-                  h-[220px] sm:h-[260px] md:h-[320px] lg:h-[360px]
-                  object-contain
-                  transition-all duration-500
-                "
+                alt={`BeeLiz ${activeIndex + 1}`}
+                className="w-full 
+                          h-[220px] sm:h-[260px] md:h-[320px] lg:h-[360px]
+                          object-contain 
+                          transition-all duration-500"
               />
             </div>
 
@@ -99,7 +95,6 @@ function ForCondHero() {
                 </button>
               ))}
             </div>
-
           </div>
         </div>
       </div>
@@ -107,4 +102,4 @@ function ForCondHero() {
   );
 }
 
-export default ForCondHero;
+export default BeelizPlus;

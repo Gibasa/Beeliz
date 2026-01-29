@@ -62,6 +62,7 @@ function Navbar() {
     { label: "Como funciona", path: "/como-funciona" },
     { label: "Para condomínios", path: "/para-condominios" },
     { label: "Para empresas", path: "/para-empresas" },
+    { label: "BeeLiz+", path: "/beeliz-plus" },
     { label: "Contato", path: "/contato" },
   ];
 
@@ -75,12 +76,12 @@ function Navbar() {
           <img
             src={scrolled ? "/images/Logo-blue.png" : "/images/Logo-yellow.png"}
             alt="Beeliz Logo"
-            className="h-12 lg:h-16 w-auto object-contain transition-all duration-300"
+            className="h-12 nav:h-16 w-auto object-contain transition-all duration-300"
           />
         </Link>
 
         {/* MENU DESKTOP */}
-        <div className="hidden lg:flex space-x-3">
+        <div className="hidden nav:flex space-x-3">
           {menuItems.map((item) => {
             const active = isActive(item.path);
 
@@ -109,7 +110,7 @@ function Navbar() {
         </div>
 
         {/* HAMBURGUER + DROPDOWN */}
-        <div className="relative lg:hidden" ref={menuRef}>
+        <div className="relative nav:hidden" ref={menuRef}>
           <button
             onClick={() => setMenuOpen((prev) => !prev)}
             className={`focus:outline-none transition-colors ${burgerColor}`}

@@ -12,8 +12,8 @@ function Hero() {
           <div className="lg:w-1/2 text-center lg:text-left">
             <h1 className="font-title text-4xl md:text-5xl font-bold text-brand-primary leading-tight mb-6 italic">
               Minimercados <br />
-              inteligentes com <br />
-              cuidado humano
+              inteligente, com <br />
+              cuidado humano.
             </h1>
 
             <p className="font-main text-base md:text-lg text-brand-primary mb-8
