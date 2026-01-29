@@ -11,7 +11,7 @@ function Hero() {
           {/* TEXTO */}
           <div className="lg:w-1/2 text-center lg:text-left">
             <h1 className="font-title text-4xl md:text-5xl font-bold text-brand-primary leading-tight mb-6 italic">
-              Minimercados <br />
+              Minimercado <br />
               inteligente, com <br />
               cuidado humano.
             </h1>
