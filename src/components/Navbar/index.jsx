@@ -59,10 +59,10 @@ function Navbar() {
 
   const menuItems = [
     { label: "Quem somos", path: "/" },
-    { label: "Como funciona", path: "/como-funciona" },
     { label: "Para condomínios", path: "/para-condominios" },
     { label: "Para empresas", path: "/para-empresas" },
     { label: "BeeLiz+", path: "/beeliz-plus" },
+    { label: "Como funciona", path: "/como-funciona" },
     { label: "Contato", path: "/contato" },
   ];
 

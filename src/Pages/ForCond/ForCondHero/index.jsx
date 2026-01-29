@@ -31,7 +31,7 @@ function ForCondHero() {
             </h2>
 
             <p className="font-main text-base md:text-lg text-brand-primary mb-4">
-              A BeeLiz nasce para facilitar a vida dentro de casa, mesmo fora dela.
+              A BeeLiz nasce para facilitar a vida dentro de casa.
             </p>
 
             <p className="font-main text-base md:text-lg text-brand-primary mb-4">
